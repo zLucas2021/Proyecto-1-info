@@ -4,6 +4,6 @@
 
 Juego al estilo Mario Bros , en 2d, realizado en la Segunda Etapa de Infogamer
 
-***Lenguaje: *** GDScript
+***Lenguaje:*** GDScript
 
 ***Autor:*** Lucas Alfonsin
