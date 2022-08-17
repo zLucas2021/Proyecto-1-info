@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Juego/Nivel 1/Nivel.gd" type="Script" id=1]
+[ext_resource path="res://Juego/menu/Menupausa.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Juego/interfaz/HUD.tscn" type="PackedScene" id=7]
+[ext_resource path="res://recursos/Background/bg_layer2.png" type="Texture" id=8]
+[ext_resource path="res://recursos/Background/bg_layer4.png" type="Texture" id=9]
+[ext_resource path="res://recursos/Background/bg_layer3.png" type="Texture" id=10]
+[ext_resource path="res://recursos/Background/bg_layer1.png" type="Texture" id=11]
+
+[node name="NivelBase" type="Node"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_offset = Vector2( 0, -1000 )
+
+[node name="parallax_fondo" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2048, 2048 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/parallax_fondo"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parallax_nubes" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/parallax_nubes"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parallax_nubes_medias" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/parallax_nubes_medias"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parallax_nubes_cercanas" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/parallax_nubes_cercanas"]
+margin_right = 2048.0
+margin_bottom = 2048.0
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="capafrente" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="capafrente" instance=ExtResource( 7 )]
+
+[node name="Menupausa" parent="capafrente" instance=ExtResource( 5 )]
+process_priority = 1
+
+[node name="plataformalarga" type="Node" parent="."]
+
+[node name="plataformacorta" type="Node" parent="."]
+
+[node name="plataformanormal" type="Node" parent="."]
+
+[node name="enemigos" type="Node" parent="."]
+
+[node name="objetos" type="Node" parent="."]
+
+[node name="objeotsdanio" type="Node" parent="."]
+
+[node name="zanahorias" type="Node" parent="."]

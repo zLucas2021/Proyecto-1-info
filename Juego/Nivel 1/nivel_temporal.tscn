@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Juego/Skiper/Bob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Juego/plataformas/plataformalargapiedra.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Juego/plataformas/plataformapiedracorta.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Juego/menu/Menupausa.tscn" type="PackedScene" id=4]
+
+[node name="nivel_temporal" type="Node"]
+
+[node name="Bob" parent="." instance=ExtResource( 1 )]
+position = Vector2( -34.9623, -7.41624 )
+caida_acel = 200
+fuerz_salto = 2100
+
+[node name="plataformapiedracorta" parent="." instance=ExtResource( 3 )]
+position = Vector2( -12.7136, 9.53516 )
+
+[node name="plataformalargapiedra" parent="." instance=ExtResource( 2 )]
+position = Vector2( 154.682, 0 )
+
+[node name="Menupausa" parent="." instance=ExtResource( 4 )]
+process_priority = 1
+margin_left = -505.917
+margin_top = -419.08
+margin_right = -505.917
+margin_bottom = -419.08

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Juego/plataformas/Plataforma nieve.tscn" type="PackedScene" id=1]
+
+[node name="plataforma nieve no padre" instance=ExtResource( 1 )]

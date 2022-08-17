@@ -1,0 +1,88 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Juego/Nivel 1/NivelBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Juego/Skiper/Bob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Juego/objetos/zanahoria.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Juego/plataformas/plataformamaderalarga.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Juego/objetos/portal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Juego/plataformas/plataformacortamadera.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Juego/objetosdaño/pinchos.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Juego/enemigos/Chaja.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Juego/objetos/moneda_oro.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Juego/objetos/moneda_plata.tscn" type="PackedScene" id=10]
+
+[node name="Nivel1" instance=ExtResource( 1 )]
+nivel_actual = "res://Juego/Nivel 1/Nivel1.tscn"
+
+[node name="plataformamaderalarga" parent="plataformalarga" index="0" instance=ExtResource( 4 )]
+position = Vector2( -1623.39, 92.7945 )
+
+[node name="plataformamaderalarga3" parent="plataformalarga" index="1" instance=ExtResource( 4 )]
+position = Vector2( -992.333, -160.409 )
+
+[node name="plataformamaderalarga2" parent="plataformalarga" index="2" instance=ExtResource( 4 )]
+position = Vector2( -1242.7, 9.48825 )
+
+[node name="plataformamaderalarga4" parent="plataformalarga" index="3" instance=ExtResource( 4 )]
+position = Vector2( -463.472, -168.853 )
+
+[node name="plataformacortamadera" parent="plataformacorta" index="0" instance=ExtResource( 6 )]
+position = Vector2( -1421.84, 39.7213 )
+
+[node name="plataformacortamadera2" parent="plataformacorta" index="1" instance=ExtResource( 6 )]
+position = Vector2( -671.011, -169.227 )
+
+[node name="Chaja" parent="enemigos" index="0" instance=ExtResource( 8 )]
+position = Vector2( -792.994, -167.945 )
+
+[node name="moneda_oro" parent="objetos" index="0" instance=ExtResource( 9 )]
+position = Vector2( -1708.59, -32.0361 )
+
+[node name="moneda_oro2" parent="objetos" index="1" instance=ExtResource( 9 )]
+position = Vector2( -1527.06, 32.0361 )
+
+[node name="moneda_oro4" parent="objetos" index="2" instance=ExtResource( 9 )]
+position = Vector2( -1091.9, -194.887 )
+
+[node name="moneda_oro7" parent="objetos" index="3" instance=ExtResource( 9 )]
+position = Vector2( -795.564, -218.914 )
+
+[node name="moneda_oro8" parent="objetos" index="4" instance=ExtResource( 9 )]
+position = Vector2( -427.149, -213.574 )
+
+[node name="moneda_oro5" parent="objetos" index="5" instance=ExtResource( 9 )]
+position = Vector2( -1139.95, -165.52 )
+
+[node name="moneda_oro6" parent="objetos" index="6" instance=ExtResource( 9 )]
+position = Vector2( -1163.98, -122.805 )
+
+[node name="moneda_oro3" parent="objetos" index="7" instance=ExtResource( 9 )]
+position = Vector2( -1454.98, -16.0181 )
+
+[node name="moneda_plata" parent="objetos" index="8" instance=ExtResource( 10 )]
+position = Vector2( -798.234, -266.968 )
+
+[node name="moneda_plata2" parent="objetos" index="9" instance=ExtResource( 10 )]
+position = Vector2( -1196.02, -66.742 )
+
+[node name="moneda_plata3" parent="objetos" index="10" instance=ExtResource( 10 )]
+position = Vector2( -680.768, -200.226 )
+
+[node name="pinchos" parent="objeotsdanio" index="0" instance=ExtResource( 7 )]
+position = Vector2( -1264.31, -5.06641 )
+
+[node name="zanahoria" parent="zanahorias" index="0" instance=ExtResource( 3 )]
+position = Vector2( -1146.9, -149.613 )
+
+[node name="zanahoria3" parent="zanahorias" index="1" instance=ExtResource( 3 )]
+position = Vector2( -509.971, -213.974 )
+
+[node name="zanahoria2" parent="zanahorias" index="2" instance=ExtResource( 3 )]
+position = Vector2( -1570.52, 62.4431 )
+
+[node name="Bob" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( -1714.23, 71.9087 )
+
+[node name="portal" parent="." index="10" instance=ExtResource( 5 )]
+position = Vector2( -357.682, -248.541 )
+porximo_nivel = "res://Juego/Nivel 1/Nivel2.tscn"

@@ -1,0 +1,72 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Juego/Nivel 1/NivelBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Juego/Skiper/Bob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Juego/enemigos/Chaja.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Juego/plataformas/plataforma nieve no padre.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Juego/plataformas/plataformalargapiedra.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Juego/objetos/zanahoria.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Juego/objetos/portal.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Juego/enemigos/nubu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Juego/objetos/plataforma_salto.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Juego/enemigos/sancho.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Juego/objetosdaño/pinchos.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Juego/objetos/powerup/powerup_salto.tscn" type="PackedScene" id=12]
+
+[node name="Nivel4" instance=ExtResource( 1 )]
+nivel_actual = "res://Juego/Nivel 1/Nivel4.tscn"
+
+[node name="plataformalargapiedra" parent="plataformalarga" index="0" instance=ExtResource( 5 )]
+position = Vector2( -428.145, -291.745 )
+
+[node name="plataformalargapiedra3" parent="plataformalarga" index="1" instance=ExtResource( 5 )]
+position = Vector2( -1194.34, -644.143 )
+
+[node name="plataformalargapiedra2" parent="plataformalarga" index="2" instance=ExtResource( 5 )]
+position = Vector2( -954.802, -560.757 )
+
+[node name="plataforma nieve no padre" parent="plataformacorta" index="0" instance=ExtResource( 4 )]
+position = Vector2( -750.202, -390.256 )
+
+[node name="plataforma nieve no padre2" parent="plataformacorta" index="1" instance=ExtResource( 4 )]
+position = Vector2( -1405.9, -810.761 )
+
+[node name="Chaja" parent="enemigos" index="0" instance=ExtResource( 3 )]
+position = Vector2( -625.168, -322.056 )
+
+[node name="nubu" parent="enemigos" index="1" instance=ExtResource( 8 )]
+position = Vector2( -735.233, -1007.93 )
+
+[node name="pinche" parent="enemigos" index="2" instance=ExtResource( 10 )]
+position = Vector2( -1145.29, -658.076 )
+
+[node name="plataforma_salto" parent="objetos" index="0" instance=ExtResource( 9 )]
+position = Vector2( -782.216, -408.461 )
+
+[node name="powerup_salto" parent="objetos" index="1" instance=ExtResource( 12 )]
+position = Vector2( -1266.25, -697.827 )
+
+[node name="pinchos" parent="objeotsdanio" index="0" instance=ExtResource( 11 )]
+position = Vector2( -963.754, -576.651 )
+
+[node name="zanahoria" parent="zanahorias" index="0" instance=ExtResource( 6 )]
+position = Vector2( -678.213, -458.457 )
+
+[node name="zanahoria4" parent="zanahorias" index="1" instance=ExtResource( 6 )]
+position = Vector2( -1379.15, -842.416 )
+
+[node name="zanahoria5" parent="zanahorias" index="2" instance=ExtResource( 6 )]
+position = Vector2( -840.356, -611.691 )
+
+[node name="zanahoria2" parent="zanahorias" index="3" instance=ExtResource( 6 )]
+position = Vector2( -1203.09, -679.48 )
+
+[node name="zanahoria3" parent="zanahorias" index="4" instance=ExtResource( 6 )]
+position = Vector2( -481.539, -327.892 )
+
+[node name="Bob" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( -359.945, -310.69 )
+
+[node name="portal" parent="." index="10" instance=ExtResource( 7 )]
+position = Vector2( -1485.8, -879.154 )
+porximo_nivel = "res://Juego/Nivel 1/Nivel5.tscn"

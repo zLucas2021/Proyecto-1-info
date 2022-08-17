@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Juego/interfaz/contenedor_info.tscn" type="PackedScene" id=1]
+[ext_resource path="res://recursos/HUD/carrots.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "animacion zana"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 107.505, 10.4881 ), Vector2( 107.505, 5.99323 ), Vector2( 107.505, 2.99662 ), Vector2( 106.007, 5.99323 ), Vector2( 109.003, -2.24746 ), Vector2( 109.003, 3.74577 ), Vector2( 109.003, 6.74238 ), Vector2( 109.003, 3.74577 ), Vector2( 109.003, 6.74238 ), Vector2( 106.756, 8.24069 ), Vector2( 107.505, 10.4881 ) ]
+}
+
+[node name="contenedor_zanahorias" instance=ExtResource( 1 )]
+margin_right = 164.0
+margin_bottom = 67.0
+
+[node name="TextureRect" parent="." index="0"]
+margin_left = -54.9967
+margin_top = 5.0062
+margin_right = -0.996536
+margin_bottom = 5.0062
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+autoplay = "animacion zana"
+"anims/animacion zana" = SubResource( 1 )

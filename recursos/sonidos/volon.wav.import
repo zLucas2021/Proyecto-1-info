@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/volon.wav-3c28fd50e2c3241255410e18499603a0.sample"
+
+[deps]
+
+source_file="res://recursos/sonidos/volon.wav"
+dest_files=[ "res://.import/volon.wav-3c28fd50e2c3241255410e18499603a0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mondeaoro.wav-73193e23c5c83c233e844d84a7dbb204.sample"
+
+[deps]
+
+source_file="res://recursos/sonidos/mondeaoro.wav"
+dest_files=[ "res://.import/mondeaoro.wav-73193e23c5c83c233e844d84a7dbb204.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
